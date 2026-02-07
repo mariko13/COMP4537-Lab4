@@ -1,0 +1,13 @@
+{
+  "name": "comp4537-lab5-backend",
+  "version": "1.0.0",
+  "description": "Node.js Backend for Lab 5",
+  "main": "server2.js",
+  "scripts": {
+    "start": "node server2.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "mysql2": "^3.0.0"
+  }
+}

@@ -5,7 +5,7 @@ require('dotenv').config();
 
 class Server {
     constructor(port) {
-        this.port = port || 3000;
+        this.port = port || 8000;
         this.db = new DatabaseHandler(fs);
     }
 
@@ -115,5 +115,5 @@ class DatabaseHandler {
     }
 }
 
-const server = new Server(8000);
+const server = new Server(process.env.PORT || 8000);
 server.start();

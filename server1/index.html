@@ -6,33 +6,26 @@
     <title>COMP 4537 - Lab 4</title>
 </head>
 <body>
-    <h1>Patient Database</h1>
+    <h1 id="title"></h1>
     <div>
-        <h2>Enter Patient Data</h2>
-        <label for="name">Enter Name: </label>
-        <input type="text" id="name" name="name" placeholder="Enter name" required>
-        <br><br>
-        <label for="dob">Enter Date of Birth: </label>
-        <input type="text" id="dob" name="dob" placeholder="Enter date of birth" required>
-        <br><br>
-        <button id="submitBtn">Submit</button>
+        <button id="insertBtn"></button>
     </div>
     <br>
     <div>
-        <h2>Get Patient Data</h2>
-        <label for="query">Enter SQL query: </label>
-        <br>
-        <textarea id="query" name="query" rows="5" cols="60" placeholder="SELECT * FROM patient">
-        </textarea>
-        <br>
-        <button id="queryBtn">Submit</button>
+        <h2 id="headerGetData"></h2>
+        <label id="labelQuery" for="query"></label>
+        <br><br>
+        <textarea id="sqlQuery" name="query" rows="5" cols="60"></textarea>
+        <br><br>
+        <button id="queryBtn"></button>
     </div>
     <br>
     <div>
-        <h2>Result</h2>
+        <h2 id="headerResult"></h2>
         <div id="output"></div>
     </div>
 
+    <script src="lang/en/en.js"></script>
     <script src="server1.js"></script>
 </body>
 </html>
